@@ -1,6 +1,7 @@
 fun main() {
     val anneeCongelation = 2022
-    val nbAmeliorationsDepuisCongelations : Int
-    val nbAmeliorationsChaqueAnnee : Int
-    val anneeActuelle : Int
+    val nbAmeliorationsDepuisCongelation : Int = readln().toInt()
+    val nbAmeliorationsChaqueAnnee : Int = readln().toInt()
+    val anneeActuelle : Int = (nbAmeliorationsDepuisCongelation / nbAmeliorationsChaqueAnnee) + anneeCongelation
+    println(anneeActuelle)
 }
